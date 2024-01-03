@@ -64,7 +64,7 @@
                             <img class="d-block w-100" src="image/testing/2.png" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="image/testing/test_second.png" alt="Third slide">
+                            <img class="d-block w-100" src="image/foodtruck.png" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#mainImageCarousel" role="button" data-slide="prev">
@@ -83,7 +83,7 @@
                     Experience the authentic flavors of Korean street food crafted by 'Real' K-moms.
                 </h3>
                 <button id="scrollButton" type="button" onclick="scheduleFunction()">
-                    Where we at...
+                    Click to find us!
                 </button>
 
             </div>
@@ -116,13 +116,16 @@
             </dd>
         </dl>
     </div> -->
-
+    <br>
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
-                <div class="container">
-                    <i style="font-size: 20px;">These foods we sell is caled "Bunsik" in Korean, which refers to a simple and convinient meals. But real meaning of the word itself is "food made of flour." </i>
+                <div class="container" style="text-align: center;">
+                    <i style="font-size: 20px;">These foods we sell are called "Bunsik" in Korean, which refers to simple and convenient meals.</i>
+                    <br>
+                     <i style="font-size: 20px;">But the real meaning of the word itself is "food made of flour."</i>
                 </div>
+                <br>
                 <h3>Meal</h3>
                 <div class="col-lg-4 col-sm-12" style="background-color: rgba(255, 42, 0, 0.325);" onclick="showDescriptionModal('tteokbokki')" style="cursor: pointer;">
                     <div class="service-item rounded pt-3">
@@ -172,7 +175,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-12" style="background-color: rgba(255, 166, 0, 0.655);">
+                <div class="col-lg-4 col-sm-12" style="background-color: rgba(255, 166, 0, 0.655);" onclick="showDescriptionModal('kcorndog')" style="cursor: pointer;">
                     <div class="service-item rounded pt-3">
                         <div class="p-4">
                             <i class="fa fa-3x fa-headset text-primary mb-4"></i>
@@ -320,13 +323,35 @@
         </div>
     </div>
 
+    <div class="modal" tabindex="'-1'" id="kcorndog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">K-Corndog</h4>
+                </div>
+
+                <div class="mask" style="background-color: beige;">
+                    <div class="modal-body">
+                        <p>In Korea, corndogs are a common and easy-to-find snack. People often add them as a topping to tteokbokki, along with cheese. 
+                            Since tteokbokki has a bit of a spicy and sweet taste, the crispy corndog helps balance out the flavors!
+                        </p>
+
+                        <h5>Description</h5>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <!-- Events -->
     <div class="container" id="targetElement">
 		<div class="row row-striped">
 			<div class="col-2 text-right">
-				<h1 class="display-5"><span class="badge" style="background-color: #f0542d;">Thursday</span></h1>
+				<h1 class="display-7"><span class="badge" style="background-color: #f0542d;">Thursday</span></h1>
 			</div>
 			<div>
 				<h3 class="text-uppercase"><strong>Christchurch Night Market</strong></h3>
@@ -341,7 +366,7 @@
 		</div>
 		<div class="row row-striped">
 			<div class="col-2 text-right">
-				<h1 class="display-5"><span class="badge" style="background-color: #f0542d;">27 December</span></h1>
+				<h1 class="display-7"><span class="badge" style="background-color: #f0542d;">27 December</span></h1>
 			</div>
 			<div>
 				<ul class="list-inline">
@@ -368,6 +393,8 @@
                 $('#trianglekimbap').modal('show');
             } else if (food == 'mandu') {
                 $('#mandu').modal('show');
+            } else if (food == 'kcorndog') {
+                $('#kcorndog').modal('show');
             }
         }
     </script>
