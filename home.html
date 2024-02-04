@@ -58,14 +58,14 @@
                 <div id="mainImageCarousel" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="image/testing/1.png" alt="First slide">
+                            <img class="d-block w-100" src="image/testing/blue.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="image/testing/2.png" alt="Second slide">
+                            <img class="d-block w-100" src="image/testing/light.png" alt="Second slide">
                         </div>
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
                             <img class="d-block w-100" src="image/foodtruck.png" alt="Third slide">
-                        </div>
+                        </div> -->
                     </div>
                     <a class="carousel-control-prev" href="#mainImageCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,10 +88,6 @@
 
             </div>
         </div>     
-        <!-- <div class="container d-flex align-items-center justify-content-center">
-          <h1 class="mb-4 text-black position-absolute top-50 start-50 translate-middle-x">Welcome!</h1>
-          <img src="image/foodtruck.png" class="img-fluid opacity-50" alt="Food Truck" height="30%">
-        </div> -->
     </div>
 
     <!-- <div class="container mt-3">
@@ -118,7 +114,7 @@
     </div> -->
     <br>
 
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="container" style="text-align: center;">
@@ -181,16 +177,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- testing -->
     <div class="container-xxl py-5">
         <div class="container">
+            <h1>Menu</h1>
             <div class="row g-4">
 
                 <div class="col-lg-4">
                     <div class="container" style="text-align: center;">
-                        <img src="image/food/tteokbokki.png" width="300" height="300">
+                        <img src="image/food/tteokbokki-removebg-preview.png" width="250" height="240" onclick="showDescriptionModal('cupdak')" style="cursor: pointer;">
                         <h2 style="color: #f0542d;">Tteokbokki🌶️🌶️🌶️</h2>
                         <p style="color: #3a3931;">Korean traditional rice cake.</p>
                     </div>
@@ -198,7 +195,7 @@
     
                 <div class="col-lg-4">
                     <div class="container" style="text-align: center;">
-                        <img src="image/food/kimchifriedrice.png" width="300" height="300">
+                        <img src="image/food/kfriedrice-removebg-preview.png" width="380" height="250" onclick="showDescriptionModal('friedrice')" style="cursor: pointer;">
                         <h2 style="color: #f0542d;">Kimchi Fried Rice🌶️</h2>
                         <p style="color: #3a3931;">Fried rice with Korean traditional dish made with fermented cabbage.</p>
                     </div>
@@ -206,11 +203,20 @@
     
                 <div class="col-lg-4">
                     <div class="container" style="text-align: center;">
-                        <img src="image/food/cupdak.png" width="300" height="300">
+                        <img src="image/food/chicken-removebg-preview.png" width="250" height="240" onclick="showDescriptionModal('cupdak')" style="cursor: pointer;">
                         <h2 style="color: #f0542d;">Cupdak🌶️🌶️</h2>
                         <p style="color: #3a3931;">Crisply fried chicken in fresh oil served with our homemade Korean sweet&spicy sauce.</p>
                     </div>
                 </div>
+
+                <div class="col-lg-4">
+                    <div class="container" style="text-align: center;">
+                        <img src="image/food/hg-removebg-preview.png" width="250" height="180" onclick="showDescriptionModal('kcorndog')" style="cursor: pointer;">
+                        <h2 style="color: #f0542d;">K-Corndog</h2>
+                        <p style="color: #3a3931;">Savor the goodness of our corndogs – a perfect blend of fish sausage or melty mozzarella encased in a crispy golden shell. A tasty delight on the go!</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -222,11 +228,11 @@
     <div class="modal" tabindex="'-1" id="tteokbokki">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">Tteokbokki</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0">
                     <div class="modal-body">
                         <p>Step into the savoury world of Tteokbokki at Mukja! In Korean, "Tteok" means rice cake, 
                             and "bokki" implies stir-fried or boiled. Together, they craft the essence of "stir-fried rice cakes."
@@ -246,11 +252,11 @@
     <div class="modal" tabindex="'-1'" id="cupdak">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">Cupdak</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0">
                     <div class="modal-body">
                         <p>Indulge in the crispy perfection of our Korean-style deep-fried chicken, 
                             expertly seasoned with our secret homemade sweet and spicy sauce!
@@ -273,11 +279,11 @@
     <div class="modal" tabindex="'-1'" id="friedrice">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">K-Fried Rice</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0">
                     <div class="modal-body">
                         <p>Kimchi fried rice, known as "Kimchi Bokkeumbap" in Korean, is a popular and flavorful dish that incorporates kimchi,
                              a traditional Korean fermented cabbage dish.
@@ -300,11 +306,11 @@
     <div class="modal" tabindex="'-1'" id="trianglekimbap">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">Triangle Kimbap</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0">
                     <div class="modal-body">
                         <p>Kimbap is made with steamed rice and various ingredients such as meat and vegetables rolled with dried seaweed called "kim" in Korean.
                             As a simple-easy and cheap snack to go, Korea sells Triangle Kimbap in convinient stores.
@@ -328,11 +334,11 @@
     <div class="modal" tabindex="'-1'" id="mandu">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">Mandu</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0;">
                     <div class="modal-body">
                         <p>Korean dumplings, known as "mandu," are delightful parcels of flavor that hold a special place in Korean cuisine. 
                             These dumplings come in various shapes and sizes, with popular types including steamed, boiled, or pan-fried mandu. 
@@ -357,11 +363,11 @@
     <div class="modal" tabindex="'-1'" id="kcorndog">
         <div class="modal-dialog">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
                     <h4 class="modal-title">K-Corndog</h4>
                 </div>
 
-                <div class="mask" style="background-color: beige;">
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0;">
                     <div class="modal-body">
                         <p>In Korea, corndogs are a common and easy-to-find snack. People often add them as a topping to tteokbokki, along with cheese. 
                             Since tteokbokki has a bit of a spicy and sweet taste, the crispy corndog helps balance out the flavors!
@@ -385,11 +391,11 @@
 				<h1 class="display-7"><span class="badge" style="background-color: #f0542d;">Thursday</span></h1>
 			</div>
 			<div>
-				<h3 class="text-uppercase"><strong>Christchurch Night Market</strong></h3>
-				<ul class="list-inline">
-					<li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>6:00 PM - 10:00 PM</li>
-                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i>The Hub Hornby Carpark</li>
-				</ul>
+                <ul class="list-inline">
+                    <h3 class="text-uppercase"><strong>Christchurch Night Market</strong></h3>
+                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> 6:00 PM - 10:00 PM</li>
+                    <li class="list-inline-item"><i class="fa fa-clock-o" aria-hidden="true"></i> The Hub Hornby Carpark</li>
+                </ul>
 				<p>The one and only Christchurch night market! It opens every Thursday from 6pm to 10pm. With over 80 stalls ranging from food to
                     crafts, this unique night market is a great place for you and your friends to hang out.
                 </p>
