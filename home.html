@@ -133,7 +133,7 @@
     </div>
 
 
-
+<!-- Food informations (pop-up) -->
     <div class="modal" tabindex="'-1" id="tteokbokki">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -240,7 +240,29 @@
         </div>
     </div>
 
-    <div class="modal" tabindex="'-1'" id="mandu">
+    <div class="modal" tabindex="'-1'" id="kcorndog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
+                    <h4 class="modal-title">K-Corndog</h4>
+                </div>
+
+                <div class="mask" style="background-color: #3a3931; color: #fef2d0;">
+                    <div class="modal-body">
+                        <p>In Korea, corndogs are a common and easy-to-find snack. People often add them as a topping to tteokbokki, along with cheese. 
+                            Since tteokbokki has a bit of a spicy and sweet taste, the crispy corndog helps balance out the flavors!
+                        </p>
+
+                        <h5>Description</h5>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <div class="modal" tabindex="'-1'" id="mandu">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
@@ -267,29 +289,8 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="modal" tabindex="'-1'" id="kcorndog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header" style="background-color: #fef2d0; color: #3a3931;">
-                    <h4 class="modal-title">K-Corndog</h4>
-                </div>
-
-                <div class="mask" style="background-color: #3a3931; color: #fef2d0;">
-                    <div class="modal-body">
-                        <p>In Korea, corndogs are a common and easy-to-find snack. People often add them as a topping to tteokbokki, along with cheese. 
-                            Since tteokbokki has a bit of a spicy and sweet taste, the crispy corndog helps balance out the flavors!
-                        </p>
-
-                        <h5>Description</h5>
-                        <p>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    </div> -->
 
 
 
@@ -337,10 +338,10 @@
                 $('#friedrice').modal('show');
             } else if (food == 'trianglekimbap') {
                 $('#trianglekimbap').modal('show');
-            } else if (food == 'mandu') {
-                $('#mandu').modal('show');
             } else if (food == 'kcorndog') {
                 $('#kcorndog').modal('show');
+            } else if (food == 'mandu') {
+                $('#mandu').modal('show');
             }
         }
     </script>
@@ -354,6 +355,7 @@
             targetElement.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
+    
 </body>
 
 </html>
