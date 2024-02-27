@@ -11,4 +11,4 @@ Our website is designed with a blend of three main colors: beige, orange-red, an
 * Learn more about Mukja, our story, and our commitment to quality and authenticity.
 
 ## Get in Touch
-Have questions, feedback, or want to book our food truck for your next event? Reach out to us at **mukja@google.com** or follow us on social media **@mukja_chch**.
+Have questions, feedback, or want to book our food truck for your next event? Reach out to us at **mukjamukja1@google.com** or follow us on social media **@mukja_chch**.
